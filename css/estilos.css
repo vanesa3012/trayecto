@@ -1,0 +1,143 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/img/pizarron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.logo{
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.navbar-brand{
+    font-family: "Nerko One", cursive;
+}
+
+.navbar-nav a{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar-nav{
+    margin-left: 70px;
+    font-size: 20px;
+}
+
+/*CELULAR*/
+
+@media (max-width: 768px){
+
+    .title{
+        color: aliceblue;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .contenedor-principal{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .imagen{
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagen{
+        width: 250px;
+        height: 170px;
+        border: 2px solid aliceblue;
+        margin: 3px auto;
+    }
+
+    .enlace{
+        text-decoration: none;
+        color: aliceblue;
+    }
+
+    .enlace:hover{
+        text-decoration: none;
+        color: aliceblue;;
+    }
+
+    .link{
+        text-align: center;
+    }
+}
+
+
+/*pantalla grande*/
+@media (min-width: 769px){
+
+    .title{
+        color: aliceblue;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .contenedor-principal{
+        display: flex;
+        justify-content: center; /*horizontal*/
+        align-items: flex-start;    /*alinea verticalmente al centro*/
+    }
+
+    .imagen{
+        display: block; /* Asegura que la imagen sea un bloque */
+        text-align: center; /*centra el texto debajo de la imagen*/
+        width: 500px;
+        height: 350px;
+        margin: 10px 15px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 2px rgb(137, 143, 137);
+        transition: all 0.25s;
+    }
+
+    .contenedor-principal img:hover{
+        transform: translateY(-13px);
+        box-shadow: 6px 13px 30px rgb(137, 143, 137);
+    }
+
+    .link{
+        text-align: center;
+    }
+
+    .contenedor-principal .enlace{
+        text-decoration: none;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+        color: aliceblue;
+    }
+
+    .contenedor-principal .enlace:hover{
+        text-decoration: none;
+        color: rgb(240, 144, 19);
+    }
+
+    /*TRADICIONAL*/
+    
+    #tradicional{
+        background-image: url(/img/sepia.jpg);
+        color: rgb(238, 241, 245);
+    }
+
+    .parte1{
+        font-size: 20px;
+        margin: 5px 35px;
+    }
+
+
+    #nueva{
+        background-image: url(/img/book.png);
+    }
+}
